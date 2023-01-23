@@ -74,6 +74,7 @@ function matchCards(img1, img2) {
     if (img1 === img2) {
         matched++;
         if (matched == 8) {
+            alert("gg mdr ")
             stopTimer()
             setTimeout(() => {
                 return shuffleCard();
