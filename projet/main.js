@@ -25,7 +25,7 @@ function startTimer() {
     }, 1000);
 }
 
-// Function to stop the timer
+
 function stopTimer() {
     clearInterval(interval);
 }
@@ -36,11 +36,11 @@ startButton.addEventListener("click", () => {
 });
 
 function saveScore() {
-    var playerName = document.getElementById("playerName").value;
-    var score = document.getElementById("score").textContent;
-    var newRow = table.insertRow();
-    var nameCell = newRow.insertCell();
-    var scoreCell = newRow.insertCell();
+    let playerName = document.getElementById("playerName").value;
+    let score = document.getElementById("score").textContent;
+    let newRow = table.insertRow();
+    let nameCell = newRow.insertCell();
+    let scoreCell = newRow.insertCell();
     nameCell.innerHTML = playerName;
     scoreCell.innerHTML = score;
 }
